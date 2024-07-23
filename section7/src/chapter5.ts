@@ -24,7 +24,6 @@ promise.catch((err)=>{
 // 타입변수 정의를 안하면 기본적으로 비동기 작업 처리의 결과값의 타입이 unknown으로 추론된다
 
 
-
 // 프로미스를 반환하는 함수의 타입을 정의
 
 interface Post {
@@ -49,4 +48,4 @@ const postRequest = fetchPost();
 
 postRequest.then((post)=>{
     post.id
-})
+})  
