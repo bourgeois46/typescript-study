@@ -24,7 +24,13 @@ let str = returnFirstValue([1, "hello", "mynameis"]); // T는 number로 할당�
 // "hello"
 
 
-// 3
+// 3)
+
+interface InterfaceA {
+    length: number;
+}
+
+interface InterfaceB extends InterfaceA {}
 
 function getLength<T extends {length: number}>(data: T){
     return data.length;
